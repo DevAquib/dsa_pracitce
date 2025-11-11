@@ -1,4 +1,3 @@
-// Definition for a binary tree node (usually given in LeetCode-style problems)
 class TreeNode {
     int val;
     TreeNode left;
