@@ -24,12 +24,12 @@ void PreInPostTraversal(TreeNode root){
         if(it.second==1){
             pre.add(it.first);
             it.second++;
-            if(it.left!=null)st.push(it.left,it.second);
+            if(it.first.left!=null)st.push(new Pair(it.first.left,it.second));
         }
         else if(it.second==2){
             in.add(it.first);
             it.second++;
-            if(it.right!=null)st.push(it.right,it.second);
+            if(it.right!=null)st.push(new Pair(it.right,it.second));
         }
         else{
             post.add(it.first);
