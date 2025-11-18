@@ -26,7 +26,7 @@ class Solution {
         // CASE 1: Both left and right returned non-null.
         // This means p is in one subtree and q is in the other.
         // → Current root is the LCA.
-        if (left != null && right != null) return root;
+        // if (left != null && right != null) return root;
 
         // CASE 2: Only left subtree returned a valid node.
         // Both targets are somewhere in the left subtree.
@@ -34,9 +34,9 @@ class Solution {
 
         // CASE 3: Only right subtree returned a valid node.
         // Both targets are somewhere in the right subtree.
-        if (left == null) return right;
+        else if (left == null) return right;
 
         // Technically unreachable, but keeps structure consistent.
-        return null;
+        else return null;
     }
 }
