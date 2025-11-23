@@ -43,8 +43,7 @@ class Solution {
      * stIndex and endIndex define the current segment of the inorder array
      * that represents the current subtree.
      */
-    private TreeNode helper(int[] preorder, int[] inorder,
-                            int stIndex, int endIndex, int n) {
+    private TreeNode helper(int[] preorder, int[] inorder,int stIndex, int endIndex, int n) {
 
         // Base case: no elements left
         if (index >= n || stIndex > endIndex) return null;
