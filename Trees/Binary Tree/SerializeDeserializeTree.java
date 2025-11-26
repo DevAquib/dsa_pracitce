@@ -8,7 +8,7 @@
  * }
  */
 
-public class Codec {
+public class SerializeDeserializeTree {
 
     // ================================
     // SERIALIZE (Tree → String)
